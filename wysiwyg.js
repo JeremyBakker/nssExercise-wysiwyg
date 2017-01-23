@@ -77,23 +77,23 @@ for (var i = 0; i < famousPeople.length; i++) {
 	var currentBirth = famousPeople[i].lifespan.birth;
 	var currentDeath = famousPeople[i].lifespan.death;
 	var card = `<article class="cardSectionArticle">
-					<header>
-						<h2 id=card${[i]}>${currentTitle}</h2>
-						<h3>${currentName}</h3>
-					</header>
-					<section class="bioSection">
-						<p>${currentBio}</p>
-						<img src="${currentImage}" alt="picture of ${currentName}" height="100px" width="100px">
-					</section>
-					<footer>
-						<p>Born: ${currentBirth} Died: ${currentDeath}
-					<footer>
-				</article>`;
+		<header>
+			<h2 id=card${[i]}>${currentTitle}</h2>
+			<h3>${currentName}</h3>
+		</header>
+		<section class="bioSection">
+			<p>${currentBio}</p>
+			<img src="${currentImage}" alt="picture of ${currentName}" height="100px" width="100px">
+		</section>
+		<footer>
+			<p>Born: ${currentBirth} Died: ${currentDeath}
+		<footer>
+	</article>`;
 	cardSection.innerHTML += card;
 }
 
-// this loop adds two event listeners on the cardSectionArticle elements. a loop is necessary because targeting elements by class returns
-	// an HTML collection in an array-like structure
+// this loop adds two event listeners on the cardSectionArticle elements. a loop is necessary because targeting elements 
+	// by class returns an HTML collection in an array-like structure
 for (var j = 0; j < famousPeople.length; j++) {
 	cardSectionArticle[j].addEventListener("click", border);
 	cardSectionArticle[j].addEventListener("click", focus);
