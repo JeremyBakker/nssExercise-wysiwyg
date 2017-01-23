@@ -68,7 +68,7 @@ var cardSectionArticle = document.getElementsByClassName("cardSectionArticle");
 var input = document.getElementById("input");
 var bioSection = document.getElementsByClassName("bioSection");
 
-// populate individual cards with biographical data and adds each to the DOM
+// populate individual cards with biographical data and add each to the DOM
 for (var i = 0; i < famousPeople.length; i++) {
 	var currentTitle = famousPeople[i].title;
 	var currentName = famousPeople[i].name;
@@ -92,13 +92,12 @@ for (var i = 0; i < famousPeople.length; i++) {
 	cardSection.innerHTML += card;
 }
 
-// this loop adds two event listeners on the cardSectionArticle elements. a loop is necessary because targeting elements 
-	// by class returns an HTML collection in an array-like structure
+// add two event listeners on the cardSectionArticle elements with a loop to account for grabbing elements by class
 for (var j = 0; j < famousPeople.length; j++) {
 	cardSectionArticle[j].addEventListener("click", border);
 	cardSectionArticle[j].addEventListener("click", focus);
 }
-// this function removes any border classes and resets the input text box before adding a border to the clicked card 
+// remove border classes from elements and reset the input text box before adding a border to the clicked card 
 	// in order to make sure users can edit only one card at a time
 function border(event) {
 	for (var k = 0; k < famousPeople.length; k++) {
@@ -107,12 +106,12 @@ function border(event) {
 	input.value = "";
 	this.classList.toggle("border");
 }
-// this function highlights the text field to signal to the user where to input new text for the biography
+// highlight the text field to signal to the user where to input new text for the biography
 function focus(event){
 	input.focus();
 }
 
-// add an event listener to the text input field
+// add an event listener to the text input field to capture what the user enters
 input.addEventListener("keyup", edit);
 // loop through each article to determine whether it has a border. if so, connect its biography section to the text 
 	// input field to allow the user to edit the biography field. reset the input field when the user presses the enter 
