@@ -26,8 +26,8 @@ var famousPeople = [
 	{
 		title: "Professor",
 		name: "Charles Babbage",
-		bio: "A mathematician, philosopher, inventor and mechanical engineer, Babbage is best remembered for originating \
-			the concept of a programmable computer.",
+		bio: "A mathematician, philosopher, inventor and mechanical engineer, Babbage is best remembered \
+			for originating the concept of a programmable computer.",
 		image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Charles_Babbage_-_1860.jpg",
 		lifespan: {
 			birth: 1791,
@@ -58,9 +58,10 @@ var famousPeople = [
 	{
 		title: "Professor",
 		name: "Edward Tufte",
-		bio: "Tufte is noted for his writings on information design and as a pioneer in the field of data visualization.",	
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Edward_Tufte_-_cropped.jpg/1024px-Edward_\
-			Tufte_-_cropped.jpg",	
+		bio: "Tufte is noted for his writings on information design and as a pioneer in the field of \
+			data visualization.",	
+		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Edward_Tufte_-_cropped.jpg/1024px-\
+			Edward_Tufte_-_cropped.jpg",	
 		lifespan: {
 			birth: 1942,
 			death: "Still Living"
