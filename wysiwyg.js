@@ -1,3 +1,4 @@
+// establish an object array to hold data to populate the biography cards
 var famousPeople = [
 	{
 	  title: "Samurai",
@@ -61,6 +62,13 @@ var famousPeople = [
 	}
 ]
 
+// initiate global variables to make the code more efficient below
+var cardSection = document.getElementById("cardSection");
+var cardSectionArticle = document.getElementsByClassName("cardSectionArticle");
+var input = document.getElementById("input");
+var bioSection = document.getElementsByClassName("bioSection");
+
+// populate individual cards with biographical data and adds each to the DOM
 for (var i = 0; i < famousPeople.length; i++) {
 	var currentTitle = famousPeople[i].title;
 	var currentName = famousPeople[i].name;
@@ -81,35 +89,40 @@ for (var i = 0; i < famousPeople.length; i++) {
 						<p>Born: ${currentBirth} Died: ${currentDeath}
 					<footer>
 				</article>`;
-	document.getElementById("cardSection").innerHTML += card;
+	cardSection.innerHTML += card;
 }
 
+// this loop adds two event listeners on the cardSectionArticle elements. a loop is necessary because targeting elements by class returns
+	// an HTML collection in an array-like structure
 for (var j = 0; j < famousPeople.length; j++) {
-	document.getElementsByClassName("cardSectionArticle")[j].addEventListener("click", border);
-	document.getElementsByClassName("cardSectionArticle")[j].addEventListener("click", focus);
+	cardSectionArticle[j].addEventListener("click", border);
+	cardSectionArticle[j].addEventListener("click", focus);
 }
-
+// this function removes any border classes and resets the input text box before adding a border to the clicked card in order to make 
+  // sure users can edit only one card at a time
 function border(event) {
 	for (var k = 0; k < famousPeople.length; k++) {
-		document.getElementsByClassName("cardSectionArticle")[k].classList.remove("border");
+		cardSectionArticle[k].classList.remove("border");
 	}
-	document.getElementById("input").value = "";
+	input.value = "";
 	this.classList.toggle("border");
 }
-
+// this function highlights the text field to signal to the user where to input new text for the biography
 function focus(event){
-	document.getElementById("input").focus();
+	input.focus();
 }
 
-document.getElementById("input").addEventListener("keyup", edit);
-
+// add an event listener to the text input field
+input.addEventListener("keyup", edit);
+// loop through each article to determine whether it has a border. if so, connect its biography section to the text input field to 
+	// allow the user to edit the biography field. reset the input field when the user presses the enter key (keyCode 13).
 function edit(event) {
 	for (var l = 0; l < famousPeople.length; l++) {
-		if (document.getElementsByClassName("cardSectionArticle")[l].classList.contains("border")) {
-			document.getElementsByClassName("bioSection")[l].childNodes[1].innerHTML = document.getElementById("input").value;
+		if (cardSectionArticle[l].classList.contains("border")) {
+			bioSection[l].childNodes[1].innerHTML = document.getElementById("input").value;
 		}
 	}
 	if (event.keyCode == 13) {
-		document.getElementById("input").value = "";
+		input.value = "";
 	}
 }
