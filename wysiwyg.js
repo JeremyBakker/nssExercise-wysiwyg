@@ -98,8 +98,8 @@ for (var j = 0; j < famousPeople.length; j++) {
 	cardSectionArticle[j].addEventListener("click", border);
 	cardSectionArticle[j].addEventListener("click", focus);
 }
-// this function removes any border classes and resets the input text box before adding a border to the clicked card in order to make 
-  // sure users can edit only one card at a time
+// this function removes any border classes and resets the input text box before adding a border to the clicked card 
+	// in order to make sure users can edit only one card at a time
 function border(event) {
 	for (var k = 0; k < famousPeople.length; k++) {
 		cardSectionArticle[k].classList.remove("border");
@@ -114,8 +114,9 @@ function focus(event){
 
 // add an event listener to the text input field
 input.addEventListener("keyup", edit);
-// loop through each article to determine whether it has a border. if so, connect its biography section to the text input field to 
-	// allow the user to edit the biography field. reset the input field when the user presses the enter key (keyCode 13).
+// loop through each article to determine whether it has a border. if so, connect its biography section to the text 
+	// input field to allow the user to edit the biography field. reset the input field when the user presses the enter 
+	// key (keyCode 13).
 function edit(event) {
 	for (var l = 0; l < famousPeople.length; l++) {
 		if (cardSectionArticle[l].classList.contains("border")) {
