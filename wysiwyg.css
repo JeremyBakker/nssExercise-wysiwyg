@@ -1,0 +1,30 @@
+#cardSection {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+
+article.cardSectionArticle {
+	display: inline-block;
+	width: 27%;
+	height: 450px;
+	margin: 2.5%;
+	padding: 5px;
+	float: left;
+	text-align: center;
+}
+
+article.cardSectionArticle:nth-child(even) {
+	background-color: lightyellow;
+}
+
+article.cardSectionArticle:nth-child(odd) {
+	background-color: lightblue;
+}
+
+.border {
+	border: 3px dotted black;
+}
+
+
+

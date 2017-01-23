@@ -12,7 +12,14 @@ For every even numbered element, have a light yellow background.
 
 For every odd numbered element, have a light blue background.
 
-Each element's DOM structure should be as shown below.
+Each element's DOM structure should be as shown below:
+
+<person>
+  <header>Name and title go here</header>
+  <section>Bio and image go here</section>
+  <footer>Lifespan info goes here</footer>
+</person>
+
 
 When you click on one of the person elements, a dotted border should appear around it.
 
