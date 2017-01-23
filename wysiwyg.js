@@ -14,8 +14,8 @@ var famousPeople = [
 	{
 		title: "President",
 		name: "George Washington",
-		bio: "George Washington was a leader of the Continental Army in the American Revolution, and was the first to \
-			become U.S. president.",
+		bio: "George Washington was a leader of the Continental Army in the American Revolution, and was the \
+			first to become U.S. president.",
 		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_\
 		Portrait_of_George_Washington.jpg/1024px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
 		lifespan: {
@@ -84,18 +84,18 @@ for (var i = 0; i < famousPeople.length; i++) {
 	var currentBirth = famousPeople[i].lifespan.birth;
 	var currentDeath = famousPeople[i].lifespan.death;
 	var card = `<article class="cardSectionArticle">
-		<header>
-			<h2 id=card${[i]}>${currentTitle}</h2>
-			<h3>${currentName}</h3>
-		</header>
-		<section class="bioSection">
-			<p>${currentBio}</p>
-			<img src="${currentImage}" alt="picture of ${currentName}" height="100px" width="100px">
-		</section>
-		<footer>
-			<p>Born: ${currentBirth} Died: ${currentDeath}
-		<footer>
-	</article>`;
+			<header>
+				<h2 id=card${[i]}>${currentTitle}</h2>
+				<h3>${currentName}</h3>
+			</header>
+			<section class="bioSection">
+				<p>${currentBio}</p>
+				<img src="${currentImage}" alt="picture of ${currentName}" height="100px" width="100px">
+			</section>
+			<footer>
+				<p>Born: ${currentBirth} Died: ${currentDeath}
+			<footer>
+		</article>`;
 	cardSection.innerHTML += card;
 }
 
