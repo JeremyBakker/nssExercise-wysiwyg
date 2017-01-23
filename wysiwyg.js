@@ -3,7 +3,8 @@ var famousPeople = [
 	{
 	  title: "Samurai",
 	  name: "Tomoe Gozen",
-	  bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
+	  bio: "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed \
+	  	many of those held by even the strongest men in her unit.",
 	  image: "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
 	  lifespan: {
 	    birth: 1747,
@@ -13,8 +14,10 @@ var famousPeople = [
 	{
 		title: "President",
 		name: "George Washington",
-		bio: "George Washington was a leader of the Continental Army in the American Revolution, and was the first to become U.S. president.",
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/1024px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+		bio: "George Washington was a leader of the Continental Army in the American Revolution, and was the first to \
+			become U.S. president.",
+		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_\
+		Portrait_of_George_Washington.jpg/1024px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
 		lifespan: {
 			birth: 1732,
 			death: 1799
@@ -23,7 +26,8 @@ var famousPeople = [
 	{
 		title: "Professor",
 		name: "Charles Babbage",
-		bio: "A mathematician, philosopher, inventor and mechanical engineer, Babbage is best remembered for originating the concept of a programmable computer.",
+		bio: "A mathematician, philosopher, inventor and mechanical engineer, Babbage is best remembered for originating \
+			the concept of a programmable computer.",
 		image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Charles_Babbage_-_1860.jpg",
 		lifespan: {
 			birth: 1791,
@@ -33,7 +37,8 @@ var famousPeople = [
 	{
 		title: "Professor",
 		name: "Claude Shannon",
-		bio: "An American mathematician, electrical engineer, and cryptographer, Shannon is known as the father of information theory.",	
+		bio: "An American mathematician, electrical engineer, and cryptographer, Shannon is known as the father of \
+			information theory.",	
 		image: "https://upload.wikimedia.org/wikipedia/commons/9/99/ClaudeShannon_MFO3807.jpg",	
 		lifespan: {
 			birth: 1916,
@@ -54,7 +59,8 @@ var famousPeople = [
 		title: "Professor",
 		name: "Edward Tufte",
 		bio: "Tufte is noted for his writings on information design and as a pioneer in the field of data visualization.",	
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Edward_Tufte_-_cropped.jpg/1024px-Edward_Tufte_-_cropped.jpg",	
+		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Edward_Tufte_-_cropped.jpg/1024px-Edward_\
+			Tufte_-_cropped.jpg",	
 		lifespan: {
 			birth: 1942,
 			death: "Still Living"
